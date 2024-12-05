@@ -13,7 +13,6 @@
         "packagesPath": "/Users/sarahmekonnen/.nuget/packages/",
         "outputPath": "/Users/sarahmekonnen/Documents/git-work/Payments/Payments/obj/",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/sarahmekonnen/.nuget/NuGet/NuGet.Config"
         ],

@@ -41,3 +41,4 @@
 /Users/sarahmekonnen/Documents/git-work/Payments/Payments/obj/Debug/net8.0/Payments.csproj.Up2Date
 /Users/sarahmekonnen/Documents/git-work/Payments/Payments/bin/Debug/net8.0/package-lock.json
 /Users/sarahmekonnen/Documents/git-work/Payments/Payments/bin/Debug/net8.0/package.json
+/Users/sarahmekonnen/Documents/git-work/Payments/Payments/obj/Debug/net8.0/Payments.sourcelink.json
