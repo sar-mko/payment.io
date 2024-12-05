@@ -4,7 +4,7 @@
 Worried about your purchasing habits? Try Payment.io and get your payments on track!
 
 ## Preview 
-[Visit Site] (...)
+[Visit Site](https://payment-io.onrender.com)
 
 <img width="575" alt="Screenshot 2024-12-05 at 1 06 54 AM" src="https://github.com/user-attachments/assets/4dbd33e1-23fb-44c0-9236-e1ef8980ff50">
 <img width="710" alt="Screenshot 2024-12-05 at 1 07 07 AM" src="https://github.com/user-attachments/assets/34b10a31-7f53-4fb5-b170-e62d339589b8">
