@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Payments.Models.Purchase
+
+<div class="text-center ">
+    <h1 class="display-4">Add Your Purchases</h1>
+    <form asp-action="CreatePurchaseForm" class="flex-col space-y-4 align-items-start">
+        <input hidden type="number" asp-for="Id" placeholder="0"/>
+        <div>
+            <label>Amount</label>
+            <input type="number" class="input input-secondary bg-neutral input-sm" asp-for="Amount" placeholder="0" step="0.01"/>
+        </div>
+        <div>
+            <label>Description</label>
+            <input type="text" class="input input-secondary bg-neutral input-sm text" asp-for="Description" placeholder="Description Here..."/>
+        </div>
+        <div>
+            <label>Category</label>
+            <select id="category-select" asp-for="Category" class="btn btn-neutral input-sm btn-sm">
+                <option value="Bills">Bills</option>
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Donation">Donation</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        
+        <input type="submit" class="btn btn-primary"/>
+
+    </form>
+
+</div>

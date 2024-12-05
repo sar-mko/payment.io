@@ -1,0 +1,61 @@
+@using Microsoft.EntityFrameworkCore
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Purchase>
+
+
+<div class="text-center">
+    <h1 class="display-4">Your Purchases</h1>
+    
+    <div>
+        <h2> Total Expenses:</h2>
+        <h3>$@ViewBag.Purchases</h3>
+    </div>
+    <table class="table flex align-items-center">
+        <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Amount
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Category
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        @{
+            foreach (var purchase in Model)
+            {
+                <tr class="text-yellow-500">
+                    <td class="text-yellow-600 font-medium">
+                        @purchase.Id
+                    </td>
+                    <td>
+                        $@purchase.Amount
+                    </td>
+                    <td>
+                        @purchase.Description
+                    </td>
+                    <td>
+                        @purchase.Category
+                    </td>
+                    <td class="border-bottom-0 shadow-none">
+                        <a asp-action="AddPurchases" asp-route-id="@purchase.Id" class="btn btn-sm" >Edit</a>
+                        <a asp-action="DeletePurchase" asp-route-id="@purchase.Id" class="btn btn-sm">Delete!</a>
+                    </td>
+                </tr>
+            }
+                
+        }
+        </tbody>
+    </table>
+</div>

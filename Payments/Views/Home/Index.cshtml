@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center flex space-y-5 flex-col align-items-center">
+    <h1 class="display-4 font-semibold">Welcome to Payment.io!</h1>
+    <p>Get better at tracking your expenses for the month.</p>
+    <div class="flex space-x-5">
+        <a asp-action="Purchases" class="btn btn-secondary w-36">Overview</a>
+        <a asp-controller="Home" asp-action="AddPurchases" class="btn btn-secondary w-36">Add Purchases</a>
+    </div>
+   
+</div>
